@@ -1,0 +1,5 @@
+setup.py
+pygameengine.egg-info/PKG-INFO
+pygameengine.egg-info/SOURCES.txt
+pygameengine.egg-info/dependency_links.txt
+pygameengine.egg-info/top_level.txt
