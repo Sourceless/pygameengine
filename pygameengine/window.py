@@ -16,7 +16,6 @@ class Window:
         self.event_system.publish('mouse_press', {"x": x, "y": y, "button": button, "modifiers": modifiers})
 
     def update(self, dt):
-        print("Calling update")
         self.event_system.flush()
 
     def wrap(self):
@@ -24,7 +23,6 @@ class Window:
         self.window.event(self.on_key_press)
         self.window.event(self.on_mouse_press)
 
-        print("Wrapping update")
         print(self.update)
         pyglet.clock.schedule_interval(self.update, 1/60.0)
 

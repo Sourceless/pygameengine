@@ -11,7 +11,6 @@ class EventSystem:
         """
         Called by outside objects to push events
         """
-        print("Event published: {}, {}".format(event_type, event_data))
         self.event_queue.append(event.Event(event_type, event_data))
 
     def flush_single(self):
