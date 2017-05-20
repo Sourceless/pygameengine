@@ -23,7 +23,6 @@ class Window:
         self.window.event(self.on_key_press)
         self.window.event(self.on_mouse_press)
 
-        print(self.update)
         pyglet.clock.schedule_interval(self.update, 1/60.0)
 
     def run(self):
